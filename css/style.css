@@ -211,22 +211,37 @@ section .container button {
 }
 
 
-
+input:focus{
+  outline: none;
+}
 
 @media (max-width:767px) {
   main .container.active {
     flex-direction: column-reverse;
     padding-top: 0;
-    padding-right:0 ;
-    padding-left:0 ;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 85%;
 
   }
+
   main .container .right {
     width: 100%;
   }
-  main .container .right img{
+
+  main .container .right img {
     width: 100%;
-  }main .container .left{
+  }
+
+  main .container .left {
     padding: 0 20px;
+  }
+
+  section .container {
+    max-width: 85%;
+  }
+
+  section .container h1 {
+    font-size: 40px;
   }
 }
